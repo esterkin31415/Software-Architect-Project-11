@@ -1,5 +1,5 @@
 # MedHead Architecture Repository
-![./images/logo.png]
+![MedHead Logo](./images/logo.png)
 # Organisational Artefacts
 
 # Architecture Artefacts
