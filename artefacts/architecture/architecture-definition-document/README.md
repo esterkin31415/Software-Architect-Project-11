@@ -70,7 +70,7 @@ The following are out of scope with respect this document and the overall projec
 * Systems architecture pertaining to legacy and internal solutions which reside outside of the problem domains expressed in the business context and
 project aims.
 
-#### Primary Architectural Focus Points of this Document
+#### Architectural Focal Points of this Document
 
 This document will primarily attempt to maintain a focus on architectural concerns 
 relating to Business, Data, Security, Technology and Systems to be
@@ -78,15 +78,20 @@ integrated in the near and long term.
 
 #### Constraints    
 
-The architectural roadmap and guidance feeding into functional requirements must adhere to 
+* Existing systems and processes must not be _significantly_ impeded during any phase of the project. 
+* The architectural roadmap and guidance feeding into functional requirements must adhere to 
 the [NHS Digital Data and Technology Standards Framework](https://digital.nhs.uk/about-nhs-digital/our-work/nhs-digital-data-and-technology-standards/framework)
+* _Real_ patient data must at all times remain compliant with European GDPR regulations. 
+* Initial phases of the project should aim to produce reusable solution building blocks or patterns for future building 
+blocks which adhere to agreed on best practices.
 
 The level of conformance may be relaxed for investigative work such as spikes or proto-types.
 
 #### Limitations
 
-Initial phases of the project should aim to produce reusable solution building blocks or patterns for future building 
-blocks which adhere to agreed on best practices.
+* Patient Data confidentially must be respected and any prototypes or non-production conforment learning spikes, must 
+anonymize data or use fabricated data. 
+
 
 #### Domain Boundaries
 
