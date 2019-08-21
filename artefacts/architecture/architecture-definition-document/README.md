@@ -38,6 +38,12 @@ All parties in the consortium intend to reduce duplication of matching capabilit
 
 The primary goal of the consolidated project is to evolve a service based platform which benefits from event streams between systems, enabling decoupled and fault-tolerant single responsibility services adhering to the [principles](../architecture-principles/) of a decomposed microsevice architecture.
 
+# Target Business Capability Value Chain
+
+The following diagram depicts a target value chain which is expected to be supported on delivery of the final target state architecture laid out in this document.
+
+![Value Chain](../../../images/medhead-value-chain.png)
+
 # Scope and Project Goals
 
 The purpose of this section is to outline the scope of the architecture for key domains as well clarifying the scope of this document.
