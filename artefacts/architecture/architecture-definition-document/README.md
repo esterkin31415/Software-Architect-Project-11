@@ -240,7 +240,7 @@ The architecture should be built on the principles outlined [Architecture Princi
 | **BASELINE**  |            |                           |                |                    |                  |                                  |            |
 | Local City Emergency Responder Hospital Pre-Booking    |                |                    |                  |                                  |            | 
 | Nation Wide Emergency Responder Hospital Pre-Booking   |    |   |       |                    |                  |                                  | Missing at the National Level   || 
-| Emergency Responder Symptom Based Triage   |    |   |       |                    |                  |                                  | Missing at the National Level   || 
+| Emergency Responder Symptom Based Triage   |    |   |       |                    |                  |                                  | Missing |
 | GP Medical History Data Access|  | Consolidated        |                |                    |                  |                                  |            |
 | GP Appointments|           |                           |  Consolidated  |                    |                  |                                  |            |
 | Hospital Specialist Schedule |   |                     |                |  Consolidated      |                  |                                  |            |
