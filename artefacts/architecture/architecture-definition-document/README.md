@@ -163,12 +163,46 @@ tolerance required of institutions in the health care sector.
 ![Target State Architecture](../../../images/target-state-architecture-vision.png)
 
 The target architecture is broken into four tiers:
-* Client Access via External Networks
-This is composed of physical and logical routes to digitally access the MedHead platform.
-Non-volatile and low risk content may be available via project approved content delivery networks (CDN)
+* *Client Access via External Networks*
 
-Note that 
-The goal of this project is to gradually migrate existing and new capabilities from the silos of member organisations
+  External clients used by patients and medical staff access the platform through this layer. This tier is composed of physical and logical routes to digitally access the MedHead platform.
+Rarely changing and low risk content may be available via project approved content delivery networks (CDN)
+
+* *Access and Usability Optimised Layer*
+
+This tier provides applications and services which are highly optimised for data access and usability by patients and medical staff.
+It is expected that systems attempt to decouple themselves and add fault tolerance by following the Micro-services 
+pattern of a [data per service](https://microservices.io/patterns/data/database-per-service.html). 
+
+* *Real Time Optimised Emergency Responder Systems*
+  
+  Systems which are highly optimised for real-time uses cases and high levels of fault-tollerance reside here. These are 
+  patient safety critical systems. The project needs EARLY VALIDATION for a pattern and *solution building blocks* 
+  which can be used to develop highly responsive systems. 
+
+---  
+  The area in *RED* within this diagram should be subject to an early proof of concept to derisk solution options and 
+  provide confidence to consortium stake-holders. 
+---  
+* *Eventing and Integration Layer*
+ * *Service Mesh*
+Core business capabilities and services will be accessible via a *Service Mesh* pattern implementation in
+the Integration layer. This will also provide observability through side-car proxies and service discovery. 
+
+* *Event Bus and Data Lake*
+
+ * All services will be expected to publish core business events on a common event bus, which will also result in event 
+ aggregation within an access optimised data lake. The data lake is intended to enable allow applications to rebuild data 
+ stores based on application history. The Data Lake is intended to aid real-time and other systems in being able to 
+ provide change-reactive behaviours.  
+
+* *Domain Bounded Services and Capabilities*
+
+This tier contains core business services separated by operational and domain driven bounded contexts. Systems at this
+tier should follow a *hexagonal/ports and adapters* architecture pattern and be built to interfaces and abstractions which
+make them easy to change with new learnings and business needs. 
+
+Note that the goal of this project is to gradually migrate existing and new capabilities from the silos of member organisations
 into a coherent architecture which is jointly owned Platform and Systems Management group and adheres to its architecture, principles and standards.
 
 
@@ -176,7 +210,7 @@ into a coherent architecture which is jointly owned Platform and Systems Managem
 
 The project will follow the ADM specified in the [Summary Statement of Work](../summary-statement-of-architecture-work)
 
-# 
+ 
 
 
 
