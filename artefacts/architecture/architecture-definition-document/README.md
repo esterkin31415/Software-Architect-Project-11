@@ -54,6 +54,8 @@ strategy aimed at improving the overall standard of patient care. This foundatio
 to support the consortium in providing improved patient care through 
 delivery of its primary daily activities, documented above. 
 
+
+
 # Scope and Project Goals
 
 The purpose of this section is to outline the scope of the architecture for key domains as well clarifying the scope of this document.
@@ -162,6 +164,11 @@ The baseline architecture consists of disparate systems targetted at the use cas
  A overview of the current architectural *impact* can be seen below:
  ![Baseline state of with separate systems](../../../images/baseline-systems.png)
 
+The separation of systems and extensive manual workflow effort involved in syrnchronising relevent information between
+systems has been demonstrably unreliable and slow.
+
+This project wishes to promote a consolidated vision across medical applications owned and managed by the 
+consortium.
 
 # Target Business and Architectural State
 This project aims to deliver a target business state which results in a joint architectural governance function 
@@ -212,7 +219,7 @@ the Integration layer. This will also provide observability through side-car pro
 
 This tier contains core business services separated by operational and domain driven bounded contexts. Systems at this
 tier should follow a *hexagonal/ports and adapters* architecture pattern and be built to interfaces and abstractions which
-make them easy to change with new learnings and business needs. 
+make them easy to change with new leanings and business needs. 
 
 Note that the goal of this project is to gradually migrate existing and new capabilities from the silos of member organisations
 into a coherent architecture which is jointly owned Platform and Systems Management group and adheres to its architecture, principles and standards.
@@ -220,9 +227,22 @@ into a coherent architecture which is jointly owned Platform and Systems Managem
 
 # Tailored Architecture
 
-The project will follow the ADM specified in the [Summary Statement of Work](../summary-statement-of-architecture-work)
+The project will follow the ADM specified in the [Summary Statement of Work](../summary-statement-of-architecture-work/)
 
- 
+# Architecture Principles
+The architecture should be built on the principles outlined [Architecture Principles Document](../architecture-principles/) 
 
 
+# GAP Matrix
 
+|               | **TARGET** | *Central Medical History* | *Appointments* | *Staff Scheduling* | *Bed Allocation* | *Data Driven EMERGENCY RESPONSE* | Eliminated |  
+| ------------- | ---------- | ------------------------- | -------------- | ------------------ | ---------------- | -------------------------------- | ---------- | 
+| **BASELINE**  |            |                           |                |                    |                  |                                  |            |
+| Local City Emergency Responder Hospital Pre-Booking    |                |                    |                  |                                  |            | 
+| Nation Wide Emergency Responder Hospital Pre-Booking   |    |   |       |                    |                  |                                  | Missing at the National Level   || 
+| Emergency Responder Symptom Based Triage   |    |   |       |                    |                  |                                  | Missing at the National Level   || 
+| GP Medical History Data Access|  | Consolidated        |                |                    |                  |                                  |            |
+| GP Appointments|           |                           |  Consolidated  |                    |                  |                                  |            |
+| Hospital Specialist Schedule |   |                     |                |  Consolidated      |                  |                                  |            |
+| Hospital Bed Availability    |   |                     |                |                    | Consolidated     |                                  |            |
+| Hospital Drug Management     |   |                     |                |                    |                  |                                  |  Missing   |
