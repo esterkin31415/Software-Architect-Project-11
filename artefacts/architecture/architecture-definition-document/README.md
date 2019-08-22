@@ -40,9 +40,19 @@ The primary goal of the consolidated project is to evolve a service based platfo
 
 # Target Business Capability Value Chain
 
-The following diagram depicts a target value chain which is expected to be supported on delivery of the final target state architecture laid out in this document.
+The following diagram depicts a target value chain which is expected to be supported on delivery of the final target state architecture laid out in this document. 
 
 ![Value Chain](../../../images/medhead-value-chain.png)
+
+The end goal of delivering value in *patient care* will be 
+made possible across the consortium by combining our shared 
+strengths to provide a foundation of shared infrastructure supported 
+by the combined capability of teams skilled in the patient care business domain. 
+
+This in turn will support innovation around patient centric solutions in line with business
+strategy aimed at improving the overall standard of patient care. This foundation is expected 
+to support the consortium in providing improved patient care through 
+delivery of its primary daily activities, documented above. 
 
 # Scope and Project Goals
 
@@ -60,13 +70,13 @@ in scope of this document and the architectural project:
 * Systems Architecture pertaining to new systems and integration with partners.
   * Including: Change Management and Runtime Infrastructure
 
-### Architectural Sponsors
+### Sponsors
 
 
 | *Sponsor* | *Role and Organisation* | *Sponsored Outcomes* |
 | --------- | -------------- | --------------------- |
 | Kara Trace | CIO, Ursa Major Health  | *Near-realtime GP systems integration with third-party health care providers* |
-| Anika Hansen | CTO, Jupiter Scheduling Inc | *A consolidated domain driven architecture with secure real-time events flowing between systems* |  
+| Anika Hansen | CEO, Jupiter Scheduling Inc | *A consolidated domain driven architecture with secure real-time events flowing between systems* |  
 | UK Health Systems Integration Team | Emergency Expert Systems | Data enrichment and access to anonymised hospital and patient data |
 | Chris Pike | Lead Enterprise Architect, Schedule Shed | Outage reductions. Standardised event streams and security infrastructure to reduce organisational liability caused by scheduling mistakes |   
 
@@ -102,42 +112,56 @@ anonymize data or use fabricated data.
 #### Domain Boundaries
 
 The architectural direction is confined to solutions, processes and systems 
-affecting the following domain model
+affecting the following domain model, which was elicited from subject matter experts involved in the project.
 
-
-IMAGE 
+![High Level Domain Model elicited from experts](../../../images/domain-model.png)
 
 ##### Bounded Contexts
 
-* Appointment Scheduling
-Patient Scheduling of appointments for GPs and Hospitals
+* Patient 
+Primary actor and identity context
+
+* Medical Specialist
+Primary actor and identity
+
+* Specialisms 
+Medical Capability provided by the Medical Specialists' capabilities to the Medical Centre
+
+* Scheduling
+Medical Specialist short and long term scheduling of daily activities and availability.
+
 * Appointment 
+Patient and Medical Specialist agreed meetings.
 
-Guidance
-(Part of) the scope can be clarified with a Context Diagram.
-Many of the attributes of a baseline statement of scope will exist elsewhere in an architecture deliverable (e.g., architecture objectives, context, constraints, etc.) and can be referenced in preference to repetition where it is appropriate. It is not appropriate to reference in such a way if it can confuse (e.g., reference to a list of 20 constraints when only 5 of them help define the scope) and a separate View should be created.
-References to other documents, even documents within the same project, may not be beneficial and, as above, it is often better to repeat information to ensure that the architecture scope is clearly and completely defined in one easily consumed View.
+* Rosters
+Medical Center Staff planning
 
-Reference-ID
-Title
-Scope
+* Patient Medical History 
+Patient owned data which is managed by medical centres.
 
 
-
-
-3 
-
+# Target Business and Architectural State
 This project aims to deliver a target business state which results in a joint architectural governance function 
 across the consortium, through a jointly owned Platform and Systems Management group which is intended to provide 
 benefits from economies of scale and adherence to a strategic roadmap to 
 delivering a platform which compromises business agility and time to market, with levels of data security and fault 
 tolerance required of institutions in the health care sector.
 
+## Target State Architecture
+
+![Target State Architecture](../../../images/target-state-architecture-vision.png)
+
+The target architecture is broken into four tiers:
+* Client Access via External Networks
+This is composed of physical and logical routes to digitally access the MedHead platform.
+Non-volatile and low risk content may be available via project approved content delivery networks (CDN)
+
+Note that 
 The goal of this project is to gradually migrate existing and new capabilities from the silos of member organisations
 into a coherent architecture which is jointly owned Platform and Systems Management group and adheres to its architecture, principles and standards.
 
 
-
+# Tailored Architecture
 
 The project will follow the ADM specified in the [Summary Statement of Work](../summary-statement-of-architecture-work)
 
