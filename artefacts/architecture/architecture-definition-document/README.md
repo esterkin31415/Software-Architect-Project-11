@@ -32,7 +32,7 @@ The following organisations bring data specialisation and patient centric expert
 | Ursa Major Health | GP Appointment Scheduling | Workflow enhancement around manual integration with other systems | Appointment consolidation and reducing integration issues with hospital appointment systems |
 | Jupiter Scheduling | Hospital appointment scheduling | Workflow enhancement around manual integration with other systems | Synergies with other appointment systems and removal of manual integrations with GP scheduling systems |
 | Emergency Expert Systems | Real time hospital recommendations based on bed availability | Data integration and quality required to improve decisions | Reduce rate of poor recommendations by weighing decisions based on the patients broader medical history. | 
-| Schedule Shed | Medical staff rosters and scheduling | Workflow enhancement | Currently depends on unreliable manual updates of appointment systems when staff are not available |   
+| Roster Shed | Medical staff rosters and scheduling | Workflow enhancement | Currently depends on unreliable manual updates of appointment systems when staff are not available |   
 
 All parties in the consortium intend to reduce duplication of matching capabilities, whilst developing new capabilities which present opportunies to deliver value to patients through improved integration and data sharing between systems.   
 
@@ -118,37 +118,49 @@ affecting the following domain model, which was elicited from subject matter exp
 
 ##### Bounded Contexts
 
-* Patient 
+*Patient* 
 
 Primary actor and identity context of a patient.
 
-* Medical Specialist
+*Medical Specialist*
 
 Primary actor and identity context responsible responsible for delivering patient care. Eg. A doctor, nurse or physiotherapist.
 
-* Medical Provider 
+*Medical Provider* 
 
 A collective or organisation responsible for providing a range of a health care to a Patient, through affiliated Medical Specialists.
 
-* Specialisms 
+*Specialisms* 
 
 Medical capabilities provided by the Medical Specialists to the Medical Provider.
 
-* Scheduling
+*Scheduling*
 
 Medical Specialist short and long term scheduling of daily activities and availability.
 
-* Appointment 
+*Appointment* 
 
 Patient and Medical Specialist agreed meetings.
 
-* Roster
+*Roster*
 
 A forward-plan for staffing in the near future by a Medical Provider
 
-* Patient Medical History 
+*Patient Medical History* 
 
 Patient owned data which is managed by medical centres.
+
+
+# Baseline Business and Architectural State
+
+The baseline architecture consists of disparate systems targetted at the use cases of specific medical contexts:
+* GP Surgeries
+* Hospitals
+* Emergency Responders
+* State run medical identity management systems.
+ 
+ A overview of the current architectural *impact* can be seen below:
+ ![Baseline state of with separate systems](../../../images/baseline-systems.png)
 
 
 # Target Business and Architectural State
