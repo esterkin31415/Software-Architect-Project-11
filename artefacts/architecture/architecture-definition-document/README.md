@@ -271,7 +271,7 @@ See the [risk registrar](../risks/) for a breakdown of current known risks.
 
 As can be seen the primary concern to stake-holders at this time is the Emergency Responder Real Time System and specifically:
 It's ability to:
-* Take a location along with one of a list of specialisms (See [Specialism Reference Data](../model/specialisms)) 
+* Take a location along with one of a list of specialisms (See [Specialism Reference Data](../models/reference-data/specialities)) 
  
 # Tailored Architecture
 
