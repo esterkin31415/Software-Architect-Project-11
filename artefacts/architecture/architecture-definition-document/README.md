@@ -204,20 +204,21 @@ pattern of a [data per service](https://microservices.io/patterns/data/database-
   provide confidence to consortium stake-holders. 
 ---  
 * *Eventing and Integration Layer*
- * *Service Mesh*
-Core business capabilities and services will be accessible via a *Service Mesh* pattern implementation in
+  * *Service Mesh*
+
+    Core business capabilities and services will be accessible via a *Service Mesh* pattern implementation in
 the Integration layer. This will also provide observability through side-car proxies and service discovery. 
 
-* *Event Bus and Data Lake*
+  * *Event Bus and Data Lake*
 
- * All services will be expected to publish core business events on a common event bus, which will also result in event 
+     All services will be expected to publish core business events on a common event bus, which will also result in event 
  aggregation within an access optimised data lake. The data lake is intended to enable allow applications to rebuild data 
  stores based on application history. The Data Lake is intended to aid real-time and other systems in being able to 
  provide change-reactive behaviours.  
 
-* *Domain Bounded Services and Capabilities*
+  * *Domain Bounded Services and Capabilities*
 
-This tier contains core business services separated by operational and domain driven bounded contexts. Systems at this
+    This tier contains core business services separated by operational and domain driven bounded contexts. Systems at this
 tier should follow a *hexagonal/ports and adapters* architecture pattern and be built to interfaces and abstractions which
 make them easy to change with new leanings and business needs. 
 
