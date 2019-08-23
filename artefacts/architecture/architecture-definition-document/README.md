@@ -226,6 +226,53 @@ Note that the goal of this project is to gradually migrate existing and new capa
 into a coherent architecture which is jointly owned Platform and Systems Management group and adheres to its architecture, principles and standards.
 
 
+# GAP Matrix
+
+The table below compares known capabilities of the BASELINE platform and contrasts this with the intended target state 
+architecture.
+
+|               | **TARGET** | *Central Medical History* | *Appointments* | *Staff Scheduling* | *Bed Allocation* | *Data Driven EMERGENCY RESPONSE* | Eliminated |  
+| ------------- | ---------- | ------------------------- | -------------- | ------------------ | ---------------- | -------------------------------- | ---------- | 
+| **BASELINE**  |            |                           |                |                    |                  |                                  |            |
+| Local City Emergency Responder Hospital Pre-Booking 	✝   |                |                    |                  |                                  |            | 
+| Nation Wide Emergency Responder Hospital Pre-Booking 	✝✝  |    |   |       |                    |                  |                                  | Missing at the National Level   || 
+| Emergency Responder Symptom Based Triage   |    |   |       |                    |                  |                                  | Missing |
+| GP Medical History Data Access|  | Consolidated        |                |                    |                  |                                  |            |
+| GP Appointments|           |                           |  Consolidated  |                    |                  |                                  |            |
+| Hospital Specialist Schedule |   |                     |                |  Consolidated      |                  |                                  |            |
+| Hospital Bed Availability    |   |                     |                |                    | Consolidated     |                                  |            |
+| Hospital Drug Management     |   |                     |                |                    |                  |                                  |  Missing   |
+
+* ✝ Up to 12 Hospitals with 2000 beds each
+* ✝✝ Approximately 2000 hospitals in the UK and approximately 200,000 beds 
+
+## Identified Gaps
+
+### Nation Wide Emergency Responder Hospital Pre-Booking
+
+Although the current system provides capability to search hospital beds at the national level,
+only 0.005% (Citation not available) of cases transport patients outside of a district considered to 
+be local to the emergency and attending responders. On this basis any system should be open to extensions 
+which support this (eg. a supporting model) but this is not required in the initial system.
+
+#### Emergency Responder Symptom Based Triage
+The current system takes symptoms and uses this to determine severity of the emergency.
+
+This is currently deemed out of scope and may continue to be provided by legacy systems.
+
+#### Hospital Drug Management
+
+The current system provides capabilities to track drug inventories and reorder these. These are deemed 
+out of scope by project stake-holders and may continue to be delivered using the legacy platform.
+
+# Risks
+
+See the [risk registrar](../risks/) for a breakdown of current known risks.
+
+As can be seen the primary concern to stake-holders at this time is the Emergency Responder Real Time System and specifically:
+It's ability to:
+* Take a location along with one of a list of specialisms (See [Specialism Reference Data](../model/specialisms)) 
+ 
 # Tailored Architecture
 
 The project will follow the ADM specified in the [Summary Statement of Work](../summary-statement-of-architecture-work/)
@@ -233,17 +280,3 @@ The project will follow the ADM specified in the [Summary Statement of Work](../
 # Architecture Principles
 The architecture should be built on the principles outlined [Architecture Principles Document](../architecture-principles/) 
 
-
-# GAP Matrix
-
-|               | **TARGET** | *Central Medical History* | *Appointments* | *Staff Scheduling* | *Bed Allocation* | *Data Driven EMERGENCY RESPONSE* | Eliminated |  
-| ------------- | ---------- | ------------------------- | -------------- | ------------------ | ---------------- | -------------------------------- | ---------- | 
-| **BASELINE**  |            |                           |                |                    |                  |                                  |            |
-| Local City Emergency Responder Hospital Pre-Booking    |                |                    |                  |                                  |            | 
-| Nation Wide Emergency Responder Hospital Pre-Booking   |    |   |       |                    |                  |                                  | Missing at the National Level   || 
-| Emergency Responder Symptom Based Triage   |    |   |       |                    |                  |                                  | Missing |
-| GP Medical History Data Access|  | Consolidated        |                |                    |                  |                                  |            |
-| GP Appointments|           |                           |  Consolidated  |                    |                  |                                  |            |
-| Hospital Specialist Schedule |   |                     |                |  Consolidated      |                  |                                  |            |
-| Hospital Bed Availability    |   |                     |                |                    | Consolidated     |                                  |            |
-| Hospital Drug Management     |   |                     |                |                    |                  |                                  |  Missing   |
