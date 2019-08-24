@@ -2,7 +2,7 @@
 
 * This is sourced from open-data provided by digital.nhs.uk's [NHS Workforce Statistics](https://digital.nhs.uk/data-and-information/publications/statistical/nhs-workforce-statistics/nhs-workforce-statistics---january-2018)
 
-Capabilities Selecting Hospitals by Specialism should target capabilities based on this data 
+To be used for capabilities which selecting hospitals by specialism should target capabilities based on this data 
 
 | Speciality Group | Speciality |
 | ---------------- | ---------- |
