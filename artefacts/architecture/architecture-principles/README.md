@@ -7,7 +7,7 @@ any principles these should be striven for in all project initiatives, with any
 obvious divergence clearly justified by context.
 
 
-# Summary
+# Summary of Principles
 
 * A. Enterprise Architecture Principles
   * Principle A1: Primacy of Principles
@@ -22,7 +22,8 @@ obvious divergence clearly justified by context.
 * C. Architectural Methodology and Process Principles
   * Principle C1: Tailoring the TOGAF 9.2 ADM
   * Principle C2: A Centralised, Curated, Architecture Repository As the Source of Truth
-  * Principle C3: Fostering a Learning Culture with Proof of Concepts, Prototypes and Spikes
+  * Principle C3: The use of agreed upon Open Standards to ensure high standards
+  * Principle C4: Fostering a Learning Culture with Proof of Concepts, Prototypes and Spikes
      1. Provide A Hypothesis For Every Learning
      1. Isolate Proofs of Concepts from Production Data and Systems
      1. Relax Compliance but Consider the Consequence of Doing So
@@ -249,7 +250,7 @@ by, and under the custodianship of, the Enterprise Architecture function.
 
 **Rationale:**
 
-Where architecture artefats are dispersered across multiple systems, it becomes
+Where architecture artefacts are dispersed across multiple systems, it becomes
 difficult, over time, for all partners to have a clear oversight of 
 the current *relevant* state of the architecture and agreed-upon architectural 
 framework and processes.
@@ -259,8 +260,51 @@ framework and processes.
 A centralised architecture repository simplifies the problem of 
 consolidating and curating all current architecture level artefacts, decisions and 
 content in a landscape of constantly changing business and technical requirements.
-  
-## Principle C3: Fostering a Learning Culture with Proof of Concepts, Prototypes and Spikes
+
+## Principle C3: The use of agreed upon Open Standards to ensure high standards
+
+**Statement:**
+
+Applying agreed upon open standards and best practices can support the organisation by providing the benefit of industry
+learnings and expertise. 
+
+**Rationale:** 
+
+The principles outlined here build on industry best practices which have evolved along side
+supporting stands, best practice sand guidelines. Using associated standards can support better realising
+the benefits of the principles we align with.
+
+**Implications:**
+
+We will encourage and support, at least, the following open standards and best practice Architectural patterns. All 
+designs and architectures should be design, where appropriate, to support extensions which support. 
+
+**Initiatives are advised to document how their solutions either support these standards or are designed to be extended into supporting them.**  
+
+* Event Driven Architectures
+  * Event Sourcing
+* Microservices Architectures
+  * OpenAPI specification of service contracts
+  * Service Meshes
+     * Service Observability
+     * Service Monitoring
+     * Service Discovery
+     * Service integration visibility.
+  * Deployment through containerised, immutable and repeatable infrastructure
+* Domain Driven Design
+* Behaviour Driven Development
+  * To ensure with correctness of expected Patient centric outcomes.
+  * To support a aligning development with a ubiquitous language.
+* Fault Tolerance and design for long-term chaos engineering
+* OpenID Connect integration with state run patient identity providers.
+* Technology selection:
+  * Should favour JVM languages due to Consortium guidelines.  
+* Documentation:
+  * Should favour Javadoc or NDoc for source code and markdown or ASCIIdoc for project level documentation.
+
+As this defines a target state, it is acceptable to compromise on these, but such compromises should be documented and justified. 
+
+## Principle C4: Fostering a Learning Culture with Proof of Concepts, Prototypes and Spikes
 
 **Statement:**
  
