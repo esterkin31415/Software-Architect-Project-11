@@ -5,7 +5,7 @@ The MedHead platform is jointly owned and being developed by a consortium of 4 M
 
 # Organisational Artefacts
 
-* [MedHead Consortium Standards Body](./artefacts/organisation/org-chart/)
+* [MedHead Consortium Org Chart](./artefacts/organisation/org-chart/)
 
 # Project Artefacts
 * [Hypothesis for Developing a Proof of Concept for the Real-Time Emergency Responder Subsystem](./artefacts/architecture/hypothesis-emergency-responder/)
