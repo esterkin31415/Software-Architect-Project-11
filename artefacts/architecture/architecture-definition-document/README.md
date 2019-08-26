@@ -120,35 +120,35 @@ affecting the following domain model, which was elicited from subject matter exp
 
 ##### Bounded Contexts
 
-*Patient* 
+*Patient Information* 
 
 Primary actor and identity context of a patient.
 
-*Medical Specialist*
+*Medical Specialist Information*
 
 Primary actor and identity context responsible responsible for delivering patient care. Eg. A doctor, nurse or physiotherapist.
 
-*Medical Provider* 
+*Medical Provider Management* 
 
-A collective or organisation responsible for providing a range of a health care to a Patient, through affiliated Medical Specialists.
+An organisation responsible for providing a range of a health care to a Patient, through affiliated Medical Specialists.
 
-*Specialisms* 
+*Specialism Management* 
 
 Medical capabilities provided by the Medical Specialists to the Medical Provider.
 
-*Scheduling*
+*Scheduling Information Management*
 
 Medical Specialist short and long term scheduling of daily activities and availability.
 
-*Appointment* 
+*Appointment Management* 
 
 Patient and Medical Specialist agreed meetings.
 
-*Roster*
+*Roster Management*
 
 A forward-plan for staffing in the near future by a Medical Provider
 
-*Patient Medical History* 
+*Patient Medical History Data Management* 
 
 Patient owned data which is managed by medical centres.
 
