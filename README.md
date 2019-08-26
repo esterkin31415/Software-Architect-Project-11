@@ -13,3 +13,4 @@ The MedHead platform is jointly owned and being developed by a consortium of 4 M
 * [Architecture Models](./artefacts/architecture/architecture-models/)
   * [Reference Data](./artefacts/architecture/models/reference-data/)
     * [Medical Specialism Reference Data](./artefacts/architecture/models/reference-data/specialities/)
+* [Risk Registrar](./artefacts/architecture/risks)

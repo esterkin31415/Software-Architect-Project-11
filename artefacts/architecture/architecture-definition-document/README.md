@@ -270,8 +270,9 @@ out of scope by project stake-holders and may continue to be delivered using the
 See the [risk registrar](../risks/) for a breakdown of current known risks.
 
 As can be seen the primary concern to stake-holders at this time is the Emergency Responder Real Time System and specifically:
-It's ability to:
-* Take a location along with one of a list of specialisms (See [Specialism Reference Data](../models/reference-data/specialities)) 
+Its ability to provide a timely bed allocation, along with one of a list of specialisms (See [Specialism Reference Data](../models/reference-data/specialities)) 
+
+These risks need to be addressed using a Proof of Concept. See below.
  
 # Tailored Architecture
 
@@ -280,3 +281,12 @@ The project will follow the ADM specified in the [Summary Statement of Work](../
 # Architecture Principles
 The architecture should be built on the principles outlined [Architecture Principles Document](../architecture-principles/) 
 
+Note that these principles also provide leniency for Proofs of Concepts and learning related implementations.
+
+# Road Map
+
+The [Architecture Roadmap](../architecture-roadmap/) demonstrates the 
+near and long term plan for this architectural effort.
+ 
+As can be seen, proto-typing the emergency responder system is seen as a
+priority. Details can be found in the [Hypothesis for Real-Time Emergency Responder Capability](../hypothesis-emergency-responder)
