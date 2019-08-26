@@ -74,7 +74,6 @@ in scope of this document and the architectural project:
 
 ### Sponsors
 
-
 | *Sponsor* | *Role and Organisation* | *Sponsored Outcomes* |
 | --------- | -------------- | --------------------- |
 | Kara Trace | CIO, Ursa Major Health  | *Near-realtime GP systems integration with third-party health care providers* |
