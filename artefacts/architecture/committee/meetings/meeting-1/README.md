@@ -9,6 +9,7 @@
 | Anika Hansen | CEO, Jupiter Scheduling Inc |
 | Ashley Ketchum | Executive Business Architect, Emergency Expert Systems |
 | Chris Pike | Lead Enterprise Architect, Schedule Shed |
+| New Architect (who we need to add to LDAP) | Our new architecture consultant |
 
 # Key Points
 
