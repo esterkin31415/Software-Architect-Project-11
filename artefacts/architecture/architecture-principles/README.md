@@ -187,19 +187,21 @@ failed builds or other build, test and deliver steps.
 
 ## Principle B4: Early, Comprehensive and Appropriate Automated Tests
 
-*Statement*:
+**Statement:**
 
 Applications should be built with the guidance of automated tests which provide 
 confidence in both the functional and non-functional correctness
 of the implementation. 
 
-*Rationale:*
+**Rationale:**
+
 Software bugs are inevitable and can be caused by both errors of code or understanding.
 Early focus on testing ensures that software is 
 built to specification and that the specification is validated before 
 an investment is put into building the wrong solutions.
 
-*Implication:*
+**Implication:**
+
 This principle encourages the use of techniques from the family of Test First or Test Driven Development methods. 
 In order to validate requirements early, it is recommended to utilise language from 
 the business domain in tests.
