@@ -19,3 +19,7 @@ The MedHead platform is jointly owned and being developed by a consortium of 4 M
     * [Medical Specialism Reference Data](./artefacts/architecture/models/reference-data/specialities/)
 * [Risk Register](./artefacts/architecture/risks)
 * [Target State Architecture Roadmap](./artefacts/architecture/architecture-roadmap/)
+
+# Architecture Committee Meeting History
+
+* [Meeting 1](./artefacts/architecture/committee/meetings/meeting-1/README.md) which discussed the Emergency Responder System
