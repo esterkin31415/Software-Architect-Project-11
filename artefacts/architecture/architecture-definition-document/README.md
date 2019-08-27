@@ -164,7 +164,13 @@ The baseline architecture consists of disparate systems targetted at the use cas
  ![Baseline state of with separate systems](../../../images/baseline-systems.png)
 
 The separation of systems and extensive manual workflow effort involved in syrnchronising relevent information between
-systems has been demonstrably unreliable and slow.
+systems has been demonstrably unreProviding assistance to emergency services in real-time between hospitals in order to target:
+
+Appropriate care facilities for a specific case
+
+Avoiding overwhelming teams at a particular hospital
+
+For use-case with multiple hospitals the system should determine where ambulances are directed, based on distance, care requirements and personnel availability.
 
 This project wishes to promote a consolidated vision across medical applications owned and managed by the 
 consortium.
