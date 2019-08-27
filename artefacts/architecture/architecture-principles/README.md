@@ -17,8 +17,10 @@ obvious divergence clearly justified by context.
 * B. IT (System, Data, Solutions, Security and Operations) Architecture Principles
   * Principle B1:  Business Continuity of Patient Critical Systems
   * Principle B2:  Clarity Through a Fine Grain Separation of Concerns
-  * Principle B4: Shift Left Security
-  * Principle B5: Opening the Possibility of Extension through Event Driven Capabilities
+  * Principle B3: Continuous Integration and Delivery
+  * Principle B4: Early Comprehensive and Appropriate Automated Tests
+  * Principle B5: Shift Left Security
+  * Principle B6: Opening the Possibility of Extension through Event Driven Capabilities
 * C. Architectural Methodology and Process Principles
   * Principle C1: Tailoring the TOGAF 9.2 ADM
   * Principle C2: A Centralised, Curated, Architecture Repository As the Source of Truth
@@ -27,7 +29,7 @@ obvious divergence clearly justified by context.
      1. Provide A Hypothesis For Every Learning
      1. Isolate Proofs of Concepts from Production Data and Systems
      1. Relax Compliance but Consider the Consequence of Doing So
-
+     1. Basic Engineering, Delivery and Testing Principles are not to be relaxed for the Solution Architecture of Proofs of Concepts
 # A. Enterprise Architecture Principles
 
 ## Principle A1: Primacy of Principles
@@ -158,7 +160,60 @@ addressed within the business-context in the real-world. Technical solutions
 should all be justified by and modelled based on their overall contribution to patient
 care scenarios.
 
-## Principle B4: Shift Left Security
+## Principle B3: Continuous Integration and Delivery
+
+**Statement:**
+
+Continuous Integration and Delivery of small and incremental changes is favoured over 
+slow feature cycle times and large integrations.
+
+**Rationale:**
+
+Continuous integration of small chunks and pipelines through to production reduce 
+risk and provide early feedback of integration issues across large teams.
+A fast and regular cadence of deliver also encourages teams to reduce risk 
+by provision of more thorough testing and higher degrees.
+
+**Implications:**
+
+CI/CD pipelines should be easily (or automatically) triggered by appropriate 
+change events on the state of the code repository responsible for storing source
+code.
+
+## Principle B4: Early Comprehensive and Appropriate Automated Tests
+
+*Statement*:
+
+Applications should be built with the guidance of automated tests which provide 
+confidence in both the functional and non-functional correctness
+of the implementation. 
+
+*Rationale:*
+Software bugs are inevitable and can be caused by both errors of code or understanding.
+Early focus on testing ensures that software is 
+built to specification and that the specification is validated before 
+an investment is put into building the wrong solutions.
+
+*Implication:*
+This principle encourages the use of techniques from the family of Test First or Test Driven Development methods. 
+In order to validate requirements early, it is recommended to utilise language from 
+the business domain in tests.
+ 
+Early requirements whould be written in a form which facilitates testing.
+ 
+
+**Implications:**
+Teams should be advised to follow the Testing Pyramid and implement an appropriate 
+level of testing at each of the following levels:
+* Unit
+* Integration
+* End to End
+
+Where services are inter-dependent it is also advised to consider Consumer Contract
+Testing.
+
+ 
+## Principle B5: Shift Left Security
 
 **Statement:** 
 
@@ -175,7 +230,7 @@ presented themselves as exploited or identified vulnerabilities.
 
 **Implications:**
 By considering, per-increment, security requirements with every platform and software iteration, 
-this risk is offset and can translate into a culture of security first thinking which
+this risk is offset a6nd can translate into a culture of security first thinking which
 reduces the risk of breaking regulatory agreements, as well as the trust of patients and medical practitioners.
 
 The following practices should be looked upon and adapted to enable a culture of shift-left security:
@@ -188,7 +243,7 @@ The following practices should be looked upon and adapted to enable a culture of
 by a dependence on human error or omission.
 * A culture of security awareness and championship fostered throughout the enterprise.
 
-## Principle B5: Opening the Possibility of Extension through Event Driven Capabilities
+## Principle B6: Opening the Possibility of Extension through Event Driven Capabilities
 
 **Statement:** 
 
@@ -362,6 +417,12 @@ may feed their lessons into final productionable implementations.
  invalidate leanings from an unscalable proto-type. 
 * Performance testing of proto-types and learning centric implementations 
 should demonstrate that key-algorithms forming part of that learning scale.
- 
- 
+
+
+**iv) Basic Engineering, Delivery and Testing Principles are not to be relaxed for the Solution Architecture of Proofs of Concepts**
+* Principle B1: Business Continuity of Patient Critical Systems
+* Principle B2: Clarity Through a Fine Grain Separation of Concerns
+* Principle B3: Continuous Integration and Delivery
+* Principle B4: Early Comprehensive and Appropriate Automated Tests
+  
  
