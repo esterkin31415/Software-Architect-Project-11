@@ -178,7 +178,12 @@ by provision of more thorough testing and higher degrees.
 
 CI/CD pipelines should be easily (or automatically) triggered by appropriate 
 change events on the state of the code repository responsible for storing source
-code.
+code. To facilitate this, the following is also required:
+* **Features should be clearly trackable in version control** using appropriate branghing
+or tagging techniques.
+* **CI/CD** runs should be traceable to a given feature delivery.
+* **CI/CD** runs generate clear logs or output which may be analysed to isolate 
+failed builds or other build, test and deliver steps.
 
 ## Principle B4: Early Comprehensive and Appropriate Automated Tests
 
