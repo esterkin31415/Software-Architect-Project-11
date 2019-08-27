@@ -4,15 +4,23 @@ Project: Proof of Concept: Emergency Responder Hospital Bed Allocation
 Client: MedHead Consortium
 
 # Table of Contents
-1	Purpose of this Document	3
-2	Statement of Architecture Work	4
-3	Objectives and Scope	5
-4	Roles and Responsibilities	6
-5	Architecture Approach	7
-6	Work Plan	10
-7	Risks and Mitigations	12
-8	Acceptance Criteria and Procedures	13
-9	Signature Approvals	14
+* Project Request and Background
+  * Overarching Context
+  * Specific Request
+  *  Strategic Alignment
+  * Suggested Simplifications
+* Objectives and Scope
+* Architecture Approach
+  * Architecture Process
+  * Architecture Content
+* Relevant Methodologies and Industry Standards
+* Support of the Enterprise Continuum
+* Work Deliverables
+  * Duration and Effort
+* Risks and Mitigation
+* Acceptance Criteria and Procedures
+* Metrics and KPIs
+* Approvals
 
 # Project Request and Background
 ## Overarching Context
@@ -92,13 +100,13 @@ Blocks which may benefit future Proof of Concepts and other engineering efforts.
 
 Discuss with leadership time.
 
-# Risks and Mitigations
+# Risks and Mitigation
 See the [Risk Register](../risks)
 
 # Acceptance Criteria and Procedures
 # Metrics and KPIs
 Please define appropriately inline with the [PoC Hypothesis](../hypothesis-emergency-responder) and [Architecture Principles](../architecture-principles).
 
-# Signature Approvals
+# Approvals
 
 Kara Trace, *MedHead Board of Trustees*
