@@ -185,7 +185,7 @@ or tagging techniques.
 * **CI/CD** runs generate clear logs or output which may be analysed to isolate 
 failed builds or other build, test and deliver steps.
 
-## Principle B4: Early Comprehensive and Appropriate Automated Tests
+## Principle B4: Early, Comprehensive and Appropriate Automated Tests
 
 *Statement*:
 
