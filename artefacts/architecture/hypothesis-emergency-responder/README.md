@@ -44,10 +44,35 @@ and a data store of recent hospital information in order to suggest a hospital, 
    
    AND an event published to reserve a bed.
 
+
+# Agreed Constraints
+
+The following constraints and pointers were raised when defining this hypothesis:
+
+* The solutions should provide a RESTful API which should: 
+ * keep medical responders informed, in real-time, about:where they need to go and what they need to do
+ , Ensure that any patient data is properly protected. 
+* You'll additionally have to ensure that your POC is fully tested:
+  * In line with the project's Architectural Principles
+  * Automation tests reflecting the Testing Pyramid (unit, integration, acceptance, and E2E tests)
+  * Stress tests to provide confidence of business continuity in high volume situations.
+* To ensure that the POC can be easily integrated into future development 
+work, you will need to:
+   * centralize your code
+   * make it easily shareable
+   * provision both continuous integration (CI) and CD (continuous delivery) pipelines.
+* It is desirable that subsequent teams can utilise it as a building block for 
+continued iteration of this and other POCs.
+* The delivery should also provide clear follow-through instruction to ensure that 
+the POC’s shortcomings are transparent and stake-holders are clear about high-level steps involved in productionising a solution for the concept you have proven.
+
+The resulting documentation and PoC will be presented to members of the Architecture Board for the purpose of 
+ demonstrating and explaining the learnings from the proof of concept.
+
 # Methodlogy
 
 * TO be completed..
 
-# Results
+# Findings
 
 * TO be completed..
