@@ -16,13 +16,12 @@ Responder Subsystem
 * A clear OpenAPI specification with 4 or fewer endpoints (including health checks)
 * Sub 200 millisecond response time maintained under load of up to 800 requests per second, per service instance.
 * An implementation which explains which standards it respects and why.
-* Instructions to productionise the proven pattern
+* Instructions to productionize the proven pattern
 * Implementation completed within an allocated time frame
 
 # Example Behaviour and a Description of the Capability
 
-The Real-Time Emergency Responder Sub-system is intended to receive one or more
-more medical specialisms (See [Specialism Reference Data](../models/reference-data/specialities)) 
+The Real-Time Emergency Responder Sub-system is intended to receive one or more medical specialisms (See [Specialism Reference Data](../models/reference-data/specialities)) 
 and a data store of recent hospital information in order to suggest a hospital, with an available bed, which is associated with
     one or more matching specialisations.
     
@@ -61,12 +60,12 @@ work, you will need to:
    * centralize your code
    * make it easily shareable
    * provision both continuous integration (CI) and CD (continuous delivery) pipelines.
-* It is desirable that subsequent teams can utilise it as a building block for 
+* It is desirable that subsequent teams can utilize it as a building block for 
 continued iteration of this and other POCs.
 * The delivery should also provide clear follow-through instruction to ensure that 
 the POC’s shortcomings are transparent and stake-holders are clear about high-level steps involved in productionising a solution for the concept you have proven.
 
-The resulting documentation and PoC will be presented to members of the Architecture Board for the purpose of 
+The resulting documentation and POC will be presented to members of the Architecture Board for the purpose of 
  demonstrating and explaining the learnings from the proof of concept.
 
 # Methodlogy
