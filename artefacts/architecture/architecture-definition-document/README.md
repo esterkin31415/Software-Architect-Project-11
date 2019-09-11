@@ -23,9 +23,9 @@ This document, therefore, should act as an input into further stages of elaborat
 
 # Business Context and Drivers
 
-A consortium of four leading companies have come together to consolidate their efforts, data, applications and roadmaps in order to develop a next-generation patient-centric platform capable of improving base-line patient care, while also being responsive and capable of, real-time, data driven decision making in emergency situations.
+A consortium of four leading companies have come together to consolidate their efforts, data, applications and roadmaps in order to develop a next-generation patient-centric platform capable of improving base-line patient care, while also being responsive and capable of real-time, data-driven decision making in emergency situations.
 
-The following organisations bring data specialisation and patient centric expertease in each of the following domains.
+The following organizations bring data specialisation and patient centric expertease in each of the following domains.
 
 | *Organisation* | *Specialist Domain* | *Business Motivations* | *Notes* |
 | -------------- | ------------------- | ---------------------- | ------- |
@@ -36,7 +36,7 @@ The following organisations bring data specialisation and patient centric expert
 
 All parties in the consortium intend to reduce duplication of matching capabilities, whilst developing new capabilities which present opportunies to deliver value to patients through improved integration and data sharing between systems.   
 
-The primary goal of the consolidated project is to evolve a service based platform which benefits from event streams between systems, enabling decoupled and fault-tolerant single responsibility services adhering to the [principles](../architecture-principles/) of a decomposed microsevice architecture.
+The primary goal of the consolidated project is to evolve a service-based platform which benefits from event streams between systems, enabling decoupled and fault-tolerant single-responsibility services adhering to the [principles](../architecture-principles/) of a decomposed microsevice architecture.
 
 # Target Business Capability Value Chain
 
@@ -58,7 +58,7 @@ delivery of its primary daily activities, documented above.
 
 # Scope and Project Goals
 
-The purpose of this section is to outline the scope of the architecture for key domains as well clarifying the scope of this document.
+The purpose of this section is to outline the scope of the architecture for key domains and clarify the scope of this document.
 
 ## Architecture in Scope
 
@@ -83,14 +83,14 @@ in scope of this document and the architectural project:
 
 #### Architecture out of Scope
   
-The following are out of scope with respect this document and the overall project:
+The following are out of scope with respect to this document and the overall project:
 * Systems architecture pertaining to legacy and internal solutions which reside outside of the problem domains expressed in the business context and
 project aims.
 
 #### Architectural Focal Points of this Document
 
 This document will primarily attempt to maintain a focus on architectural concerns 
-relating to Business, Data, Security, Technology and Systems to be
+relating to Business, Data, Security, Technology, and Systems to be
 integrated in the near and long term.
 
 #### Constraints    
@@ -106,7 +106,7 @@ The level of conformance may be relaxed for investigative work such as spikes or
 
 #### Limitations
 
-* Patient Data confidentially must be respected and any prototypes or non-production conformant learning spikes, must 
+* Patient Data confidentiality must be respected, and any prototypes or non-production conformant learning spikes must 
 anonymize data or use fabricated data. 
 
 
@@ -129,7 +129,7 @@ Primary actor and identity context responsible responsible for delivering patien
 
 *Medical Provider Management* 
 
-An organisation responsible for providing a range of a health care to a Patient, through affiliated Medical Specialists.
+An organization responsible for providing a range of health care to a Patient, through affiliated Medical Specialists.
 
 *Specialism Management* 
 
@@ -145,22 +145,22 @@ Patient and Medical Specialist agreed meetings.
 
 *Roster Management*
 
-A forward-plan for staffing in the near future by a Medical Provider
+A forward-plan for staffing in the near future by a Medical Provider.
 
 *Patient Medical History Data Management* 
 
-Patient owned data which is managed by medical centres.
+Patient-owned data which is managed by medical centres.
 
 
 # Baseline Business and Architectural State
 
-The baseline architecture consists of disparate systems targetted at the use cases of specific medical contexts:
+The baseline architecture consists of disparate systems targeted at the use cases of specific medical contexts:
 * GP Surgeries
 * Hospitals
 * Emergency Responders
 * State run medical identity management systems.
  
- A overview of the current architectural *impact* can be seen below:
+ An overview of the current architectural *impact* can be seen below:
  ![Baseline state of with separate systems](../../../images/baseline-systems.png)
 
 The separation of systems and extensive manual workflow effort involved in syrnchronising relevent information between
@@ -190,17 +190,17 @@ The target architecture is broken into four tiers:
 * *Client Access via External Networks*
 
   External clients used by patients and medical staff access the platform through this layer. This tier is composed of physical and logical routes to digitally access the MedHead platform.
-Rarely changing and low risk content may be available via project approved content delivery networks (CDN)
+Rarely changing and low risk content may be available via project approved content delivery networks (CDN).
 
 * *Access and Usability Optimised Layer*
 
-This tier provides applications and services which are highly optimised for data access and usability by patients and medical staff.
+This tier provides applications and services which are highly optimized for data access and usability by patients and medical staff.
 It is expected that systems attempt to decouple themselves and add fault tolerance by following the Micro-services 
 pattern of a [data per service](https://microservices.io/patterns/data/database-per-service.html). 
 
 * *Real Time Optimised Emergency Responder Systems*
   
-  Systems which are highly optimised for real-time uses cases and high levels of fault-tollerance reside here. These are 
+  Systems which are highly optimized for real-time use cases and high levels of fault-tolerance reside here. These are 
   patient safety critical systems. The project needs EARLY VALIDATION for a pattern and *solution building blocks* 
   which can be used to develop highly responsive systems. 
 
@@ -217,18 +217,18 @@ the Integration layer. This will also provide observability through side-car pro
   * *Event Bus and Data Lake*
 
      All services will be expected to publish core business events on a common event bus, which will also result in event 
- aggregation within an access optimised data lake. The data lake is intended to enable allow applications to rebuild data 
+ aggregation within an access-optimized data lake. The data lake is intended to enable allow applications to rebuild data 
  stores based on application history. The Data Lake is intended to aid real-time and other systems in being able to 
- provide change-reactive behaviours.  
+ provide change-reactive behaviors.  
 
   * *Domain Bounded Services and Capabilities*
 
-    This tier contains core business services separated by operational and domain driven bounded contexts. Systems at this
+    This tier contains core business services separated by operational and domain-driven bounded contexts. Systems at this
 tier should follow a *hexagonal/ports and adapters* architecture pattern and be built to interfaces and abstractions which
 make them easy to change with new leanings and business needs. 
 
-Note that the goal of this project is to gradually migrate existing and new capabilities from the silos of member organisations
-into a coherent architecture which is jointly owned Platform and Systems Management group and adheres to its architecture, principles and standards.
+Note that the goal of this project is to gradually migrate existing and new capabilities from the silos of member organizations
+into a coherent architecture which is jointly owned Platform and Systems Management group and adheres to its architecture, principles, and standards.
 
 
 # GAP Matrix
@@ -257,7 +257,7 @@ architecture.
 
 Although the current system provides capability to search hospital beds at the national level,
 only 0.005% (Citation not available) of cases transport patients outside of a district considered to 
-be local to the emergency and attending responders. On this basis any system should be open to extensions 
+be local to the emergency and attending responders. On this basis, any system should be open to extensions 
 which support this (eg. a supporting model) but this is not required in the initial system.
 
 #### Emergency Responder Symptom Based Triage
