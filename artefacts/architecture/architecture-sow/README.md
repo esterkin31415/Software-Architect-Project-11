@@ -91,9 +91,15 @@ See [Architecture Principles](../architecture-principles)
 Where possible the PoC should aim to either provide or facilitate the provision of Solution and Architecture Building 
 Blocks which may benefit future Proof of Concepts and other engineering efforts.
 
+Specifically it is considered desirable for the PoC to produce:
+* A testing strategy for proof of concepts.
+* A test plan which can inform other Proofs of Concepts.
+* Demonstration of a CI/CD pattern which can be used for other projects.
+
 # Work Deliverables
 
-* A working implementation, with supporting documentation.
+* A working implementation, tests with supporting documentation.
+* Test Execution reports produced during continuous integration to demonstrate delivered behaviours.
 * A presentation of the PoC, learnings and future recommendations.
 
 ## Duration and Effort
