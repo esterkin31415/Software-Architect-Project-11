@@ -435,10 +435,11 @@ Proof of Concepts should specifically aim to adhere to the following principles:
 * Principle B3: Continuous Integration and Delivery
 * Principle B4: Early Comprehensive and Appropriate Automated Tests
 
-**v) Test Execution Plans as a tool for Communicating Requirements**
-* Proof of concepts should have test Execution Plans describing how the product should behave
-* Test Execution Plans should utilise BDD (See C3) to describe business acceptance criteria which are in scope.
-* Test Execution Plans should use the shared language of the business and be understandable by 
+**v) Test Plans as a tool for Communicating Requirements**
+* Deliverables with self-documented test plans are preferred over externally documented test-plans.
+* Proof of concepts should have Test Plans describing how the product should behave.
+* Test Plans should utilise BDD (See C3) to describe business acceptance criteria which are in scope.
+* Test Plans should use the shared language of the business and be understandable by 
  technical and non-technical partners. 
 
 **vi) Test Execution Reports as Documentation for Supported Behaviour**

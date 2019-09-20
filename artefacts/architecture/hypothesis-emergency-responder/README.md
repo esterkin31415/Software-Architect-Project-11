@@ -54,19 +54,25 @@ The following constraints and pointers were raised when defining this hypothesis
 * You'll additionally have to ensure that your POC is fully tested:
   * In line with the project's Architectural Principles
   * Automation tests reflecting the Testing Pyramid (unit, integration, acceptance, and E2E tests)
+  * The project should document its acceptance tests using BDD within the project.
   * Stress tests to provide confidence of business continuity in high volume situations.
 * To ensure that the POC can be easily integrated into future development 
 work, you will need to:
-   * centralize your code
-   * make it easily shareable
-   * provision both continuous integration (CI) and CD (continuous delivery) pipelines.
+   * Centralize your code
+   * Make it easily shareable
+   * Provision both continuous integration (CI) and CD (continuous delivery) pipelines.
+     * Test Reports produced during CI should clearly indicate which acceptance tests have passed and failed.
+   * Document your testing strategy.
 * It is desirable that subsequent teams can utilize it as a building block for 
 continued iteration of this and other POCs.
 * The delivery should also provide clear follow-through instruction to ensure that 
-the POC’s shortcomings are transparent and stake-holders are clear about high-level steps involved in productionising a solution for the concept you have proven.
+the POC’s shortcomings are transparent and stake-holders are clear about high-level 
+steps involved in productionising a solution for the concept you have proven.
 
-The resulting documentation and POC will be presented to members of the Architecture Board for the purpose of 
+The resulting documentation and POC will be presented to members of the Board of Trustees for the purpose of 
  demonstrating and explaining the learnings from the proof of concept.
+* To demonstrate the delivered behaviour, CI/CD runs should produce inspectable test reports which can be shown during the presentation.
+
 
 # Methodlogy
 
