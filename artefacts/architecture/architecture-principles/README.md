@@ -441,8 +441,9 @@ Proof of Concepts should specifically aim to adhere to the following principles:
 * Test Execution Plans should use the shared language of the business and be understandable by 
  technical and non-technical partners. 
 
-**vi) Test Execution Reports**
-To support continuous learning and transparency around software state: 
+**vi) Test Execution Reports as Documentation for Supported Behaviour**
+
+To support visibility of supported behaviour, continuous learning and transparency around software state: 
 * PoCs should have CI pipelines which runs tests and produce test execution reports
 * CI environments should allow software owners to inspect past runs and degradations of the build*which may affect any learnings from the hypothesis. in line with B3.
 
