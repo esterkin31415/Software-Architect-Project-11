@@ -428,7 +428,8 @@ should demonstrate that key-algorithms forming part of that learning scale.
 
 
 **iv) Basic Engineering, Delivery and Testing Principles are not to be relaxed for the Solution Architecture of Proofs of Concepts**
-Namely:**
+
+Proof of Concepts should specifically aim to adhere to the following principles:
 * Principle B1: Business Continuity of Patient Critical Systems
 * Principle B2: Clarity Through a Fine Grain Separation of Concerns
 * Principle B3: Continuous Integration and Delivery
