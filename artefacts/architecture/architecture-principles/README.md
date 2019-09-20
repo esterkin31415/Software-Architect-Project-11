@@ -30,6 +30,7 @@ obvious divergence clearly justified by context.
      1. Isolate Proofs of Concepts from Production Data and Systems
      1. Relax Compliance but Consider the Consequence of Doing So
      1. Basic Engineering, Delivery and Testing Principles are not to be relaxed for the Solution Architecture of Proofs of Concepts
+     
 # A. Enterprise Architecture Principles
 
 ## Principle A1: Primacy of Principles
@@ -427,9 +428,22 @@ should demonstrate that key-algorithms forming part of that learning scale.
 
 
 **iv) Basic Engineering, Delivery and Testing Principles are not to be relaxed for the Solution Architecture of Proofs of Concepts**
+Namely:**
 * Principle B1: Business Continuity of Patient Critical Systems
 * Principle B2: Clarity Through a Fine Grain Separation of Concerns
 * Principle B3: Continuous Integration and Delivery
 * Principle B4: Early Comprehensive and Appropriate Automated Tests
+
+**v) Test Execution Plans as a tool for Communicating Requirements**
+* Proof of concepts should have test Execution Plans describing how the product should behave
+* Test Execution Plans should utilise BDD (See C3) to describe business acceptance criteria which are in scope.
+* Test Execution Plans should use the shared language of the business and be understandable by 
+ technical and non-technical partners. 
+
+**vi) Test Execution Reports**
+To support continuous learning and transparency around software state: 
+* PoCs should have CI pipelines which runs tests and produce test execution reports
+* CI environments should allow software owners to inspect past runs and degradations of the build*which may affect any learnings from the hypothesis. in line with B3.
+
   
  
