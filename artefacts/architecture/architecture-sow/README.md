@@ -28,7 +28,7 @@ See [Architecture Definition Document](../architecture-definition-document) wher
 has been moved and is currently up to date.
 
 ## Specific Request
-Based on identified project [risks] (../risks/) the Architecture Advisory Board has requested
+Based on identified project [risks](../risks/) the Architecture Advisory Board has requested
 a learning spike which tests the hypothesis presented [here](../hypothesis-emergency-responder) 
 
 ##  Strategic Alignment
@@ -85,9 +85,9 @@ The TOGAF Architecture Content Framework (ACF) provides a best-practice categori
 Key stake holder concerns should be addressed and given priority, particularly in relation to response times, scalability, tolerance of collaborator (hospital system) outages and resilience under load.  
 
 # Relevant Methodologies and Industry Standards
-See [Architecture Principles](../architecture-principles)
+See [Architecture Principles](../architecture-principles) and its specific principles for Proofs of Concept.
 
-# Support of the Enterprise Continuum
+# Support of the Enterprise and Solution Continuum
 Where possible the PoC should aim to either provide or facilitate the provision of Solution and Architecture Building 
 Blocks which may benefit future Proof of Concepts and other engineering efforts.
 
@@ -104,7 +104,7 @@ Specifically we would like the PoC to produce:
 
 ## Duration and Effort
 
-Discuss with leadership time.
+Discuss with leadership team.
 
 # Risks and Mitigation
 See the [Risk Register](../risks)
