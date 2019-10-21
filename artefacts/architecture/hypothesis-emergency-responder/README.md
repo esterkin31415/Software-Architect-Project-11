@@ -7,9 +7,8 @@
 **For** the MedHead Consortium Enterprise Architecture Team
 
 **Will**
+* Increase the quality of emergency treatments and save more lives.
 * Achieve user confidence around the simplicity of such a system.
-* Efficiently treat hundreds of thousands of patients per year.
-* Save more lives.
 
 **We will know we have succeeded when we see:**
 * That over 90% of emergency cases are derived to the nearest relevant hospital in the network.
