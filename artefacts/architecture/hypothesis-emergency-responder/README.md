@@ -18,7 +18,7 @@
 * Instructions to put into production the PoC.
 * Implementation completed within the allocated time frame.
 
-# Example Behaviour and a Description of the Capability
+# Example Behavior and a Description of the Capability
 
 The Real-Time Emergency Responder Sub-system is intended to receive one or more medical specialisms (See [Specialism Reference Data](../models/reference-data/specialities)) 
 and a data store of recent hospital information in order to suggest the nearest hospital with an available bed, which is associated with
