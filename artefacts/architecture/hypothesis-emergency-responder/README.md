@@ -53,7 +53,6 @@ The following requirements were agreed when defining this hypothesis:
 * Ensure that the PoC can be easily integrated into future development: make the code easily shareable, provide continuous integration and continuous delivery (CI/CD) pipelines and document your testing strategy.
 * Ensure that subsequent development teams after this PoC will be able to use it as a group of building blocks for further modules.
 
-
 # Methodology
 
 The resulting documentation and PoC will be presented to members of the Board of Trustees to describe lessons learned from the PoC.
